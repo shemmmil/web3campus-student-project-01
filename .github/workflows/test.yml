@@ -1,0 +1,11 @@
+name: Stage Deploy
+on:
+  push:
+    branches:
+      - master
+jobs:
+  master:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚀 Run echo
+        run: echo "Seccess!!"
